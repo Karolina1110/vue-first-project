@@ -7,12 +7,18 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "format": "prettier --write --experimental-cli src/"
+    "format": "prettier --write --experimental-cli src/",
+    "server-articles": "json-server --watch ../data/articles.json -p 4000",
+    "server-accounts": "json-server --watch ../data/accounts.json -p 5000"
+
   },
   "dependencies": {
+    "axios": "^1.13.6",
     "bootstrap": "^5.3.8",
+    "json-server": "^1.0.0-beta.12",
     "vue": "^3.5.29",
-    "vue-router": "^5.0.3"
+    "vue-router": "^5.0.3",
+    "vue-spinner": "^3.0.1"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^6.0.4",
